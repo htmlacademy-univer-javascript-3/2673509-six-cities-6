@@ -1,0 +1,51 @@
+/* Контейнер для спиннера */
+.spinner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+/* Контейнер с анимацией точек */
+.spinner {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+/* Анимация для точек */
+.dot {
+  width: 15px;
+  height: 15px;
+  background-color: #007bff;
+  border-radius: 50%;
+  animation: bounce 1.5s infinite ease-in-out;
+}
+
+/* Расширяем анимацию для второй и третьей точек с разным замедлением */
+.dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+/* Анимация "прыжка" */
+@keyframes bounce {
+  0%, 80%, 100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
+
+/* Текст загрузки */
+.loading-text {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}

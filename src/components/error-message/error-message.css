@@ -1,0 +1,14 @@
+.error-message {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 16px 24px;
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  animation: fadeIn 0.5s ease-in, fadeOut 1s ease-out 5s forwards;
+}
