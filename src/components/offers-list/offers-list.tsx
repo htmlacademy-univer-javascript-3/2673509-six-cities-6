@@ -1,6 +1,6 @@
 import {PlaceCard} from '../place-card/place-card.tsx';
 import {Offer} from '../../internal/types/offer-type.tsx';
-import {useAppSelector} from '../../store/hooks.ts';
+import {useAppSelector} from '../../store/hooks/hooks.ts';
 import {SortOption} from '../../internal/enums/sort-option-enum.tsx';
 
 type OffersListProps = {

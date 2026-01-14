@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { App } from './components/app/app.tsx';
 import { store } from './store';
 import { Provider } from 'react-redux';
-import {checkAuth, getOffers} from './store/api-actions.ts';
+import {checkAuth, getOffers} from './store/api-actions/api-actions.ts';
 import {ErrorMessage} from './components/error-message/error-message.tsx';
 
 const root = ReactDOM.createRoot(

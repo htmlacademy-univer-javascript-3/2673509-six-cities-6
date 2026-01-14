@@ -1,7 +1,7 @@
 import {ChangeEvent, FormEvent, useState} from 'react';
-import {useAppDispatch} from '../../store/hooks.ts';
+import {useAppDispatch} from '../../store/hooks/hooks.ts';
 import {Rating} from '../../internal/types/rating.tsx';
-import {sendReviewAction} from '../../store/api-actions.ts';
+import {sendReviewAction} from '../../store/api-actions/api-actions.ts';
 
 type CommentFromProps = {
   id: string;

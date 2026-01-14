@@ -1,6 +1,6 @@
 import {store} from '../store';
-import {setError} from '../store/actions.ts';
-import {deleteError} from '../store/api-actions.ts';
+import {setError} from '../store/actions/actions.ts';
+import {deleteError} from '../store/api-actions/api-actions.ts';
 
 export interface ErrorResponse {
   type: string;

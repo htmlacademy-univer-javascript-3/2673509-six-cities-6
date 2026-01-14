@@ -1,4 +1,4 @@
-import {State} from './index.ts';
+import {State} from '../index.ts';
 import {createSelector} from '@reduxjs/toolkit';
 
 export const selectCurrentOffer = (state: State) => state.currentOffer;

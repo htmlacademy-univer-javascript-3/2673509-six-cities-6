@@ -1,6 +1,7 @@
 import React from 'react';
-import { Logo } from '../components/logo/logo.tsx';
-import {LoginForm} from '../components/login/login-form.tsx';
+import { Logo } from '../../components/logo/logo.tsx';
+import {LoginForm} from '../../components/login/login-form.tsx';
+import {Link} from 'react-router-dom';
 
 export function LoginPage(): React.JSX.Element {
   return (
@@ -23,9 +24,9 @@ export function LoginPage(): React.JSX.Element {
           </section>
           <section className="locations locations--login locations--current">
             <div className="locations__item">
-              <a className="locations__item-link" href="#">
+              <Link className="locations__item-link" to="/">
                 <span>Amsterdam</span>
-              </a>
+              </Link>
             </div>
           </section>
         </div>

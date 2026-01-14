@@ -1,10 +1,10 @@
 import {FormEvent, useEffect, useState} from 'react';
-import {loginAction} from '../../store/api-actions.ts';
-import {useAppDispatch, useAppSelector} from '../../store/hooks.ts';
+import {loginAction} from '../../store/api-actions/api-actions.ts';
+import {useAppDispatch, useAppSelector} from '../../store/hooks/hooks.ts';
 import {useNavigate} from 'react-router-dom';
 import {AppRouteEnum} from '../../internal/enums/app-route-enum.tsx';
 import {AuthStatus} from '../../internal/enums/auth-status-enum.tsx';
-import {setError} from '../../store/actions.ts';
+import {setError} from '../../store/actions/actions.ts';
 
 export function LoginForm(): JSX.Element {
   const [email, setEmail] = useState('');

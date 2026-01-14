@@ -1,19 +1,19 @@
 import React, {useMemo, useEffect} from 'react';
-import { CommentForm } from '../components/comment-form/comment-form.tsx';
-import {Map} from '../components/map/map.tsx';
-import {useAppDispatch, useAppSelector} from '../store/hooks.ts';
-import {Header} from '../components/header/header.tsx';
+import { CommentForm } from '../../components/comment-form/comment-form.tsx';
+import {Map} from '../../components/map/map.tsx';
+import {useAppDispatch, useAppSelector} from '../../store/hooks/hooks.ts';
+import {Header} from '../../components/header/header.tsx';
 import {useNavigate, useParams} from 'react-router-dom';
-import {addFavouriteAction, getOfferInfoAction} from '../store/api-actions.ts';
-import {AuthStatus} from '../internal/enums/auth-status-enum.tsx';
-import {OffersList} from '../components/offers-list/offers-list.tsx';
-import {APIRoute} from '../internal/enums/api-route-enum.tsx';
-import {Spinner} from '../components/spinner/spinner.tsx';
-import {NotFoundPage} from './not-found-page.tsx';
-import {selectNearbyOffers, selectOfferInfo, selectReviews} from '../store/selectors.ts';
-import {Point} from '../internal/types/point.tsx';
-import {Footer} from '../components/footer/footer.tsx';
-import {Review} from '../components/review/review.tsx';
+import {addFavouriteAction, getOfferInfoAction} from '../../store/api-actions/api-actions.ts';
+import {AuthStatus} from '../../internal/enums/auth-status-enum.tsx';
+import {OffersList} from '../../components/offers-list/offers-list.tsx';
+import {APIRoute} from '../../internal/enums/api-route-enum.tsx';
+import {Spinner} from '../../components/spinner/spinner.tsx';
+import {NotFoundPage} from '../not-found-page/not-found-page.tsx';
+import {selectNearbyOffers, selectOfferInfo, selectReviews} from '../../store/selector/selectors.ts';
+import {Point} from '../../internal/types/point.tsx';
+import {Footer} from '../../components/footer/footer.tsx';
+import {Review} from '../../components/review/review.tsx';
 
 export function OfferPage(): React.JSX.Element {
   const { id } = useParams<{ id: string }>();

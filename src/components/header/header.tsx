@@ -1,7 +1,7 @@
 import {Link} from 'react-router-dom';
-import {useAppDispatch, useAppSelector} from '../../store/hooks.ts';
+import {useAppDispatch, useAppSelector} from '../../store/hooks/hooks.ts';
 import {AuthStatus} from '../../internal/enums/auth-status-enum.tsx';
-import {logoutAction} from '../../store/api-actions.ts';
+import {logoutAction} from '../../store/api-actions/api-actions.ts';
 import {AppRouteEnum} from '../../internal/enums/app-route-enum.tsx';
 import {Logo} from '../logo/logo.tsx';
 

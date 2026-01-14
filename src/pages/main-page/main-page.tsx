@@ -1,15 +1,15 @@
 import React, { useMemo, useState } from 'react';
-import { OffersList } from '../components/offers-list/offers-list.tsx';
-import { Map } from '../components/map/map.tsx';
-import { useAppDispatch, useAppSelector } from '../store/hooks.ts';
-import { Offer } from '../internal/types/offer-type.tsx';
-import { CityList } from '../components/city-list/city-list.tsx';
-import { Cities } from '../constants';
-import { SortOption } from '../internal/enums/sort-option-enum.tsx';
-import { SortOptions } from '../components/sort-options/sort-options.tsx';
-import { setSortOption } from '../store/actions.ts';
-import {Header} from '../components/header/header.tsx';
-import {MainEmptyPage} from './main-empty-page.tsx';
+import { OffersList } from '../../components/offers-list/offers-list.tsx';
+import { Map } from '../../components/map/map.tsx';
+import { useAppDispatch, useAppSelector } from '../../store/hooks/hooks.ts';
+import { Offer } from '../../internal/types/offer-type.tsx';
+import { CityList } from '../../components/city-list/city-list.tsx';
+import { Cities } from '../../constants';
+import { SortOption } from '../../internal/enums/sort-option-enum.tsx';
+import { SortOptions } from '../../components/sort-options/sort-options.tsx';
+import { setSortOption } from '../../store/actions/actions.ts';
+import {Header} from '../../components/header/header.tsx';
+import {MainEmptyPage} from '../main-empty-page/main-empty-page.tsx';
 
 export function MainPage(): React.JSX.Element {
   const [activeOffer, setActiveOffer] = useState<Offer | null>(null);

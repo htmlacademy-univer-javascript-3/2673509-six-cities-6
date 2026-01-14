@@ -1,10 +1,10 @@
 import { createAction } from '@reduxjs/toolkit';
-import { Offer } from '../internal/types/offer-type.tsx';
-import { CityName } from '../internal/enums/city-name-enum.tsx';
-import { SortOption } from '../internal/enums/sort-option-enum.tsx';
-import { AuthStatus } from '../internal/enums/auth-status-enum.tsx';
-import {ReviewType} from '../internal/types/review-type.tsx';
-import {OfferInfo} from '../internal/types/offer-info.tsx';
+import { Offer } from '../../internal/types/offer-type.tsx';
+import { CityName } from '../../internal/enums/city-name-enum.tsx';
+import { SortOption } from '../../internal/enums/sort-option-enum.tsx';
+import { AuthStatus } from '../../internal/enums/auth-status-enum.tsx';
+import {ReviewType} from '../../internal/types/review-type.tsx';
+import {OfferInfo} from '../../internal/types/offer-info.tsx';
 
 export const fillCityOffersList = createAction<Offer[]>('FillCityOfferList');
 export const changeCity = createAction<CityName>('ChangeCity');

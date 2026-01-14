@@ -1,4 +1,4 @@
-import {useAppSelector} from '../../store/hooks.ts';
+import {useAppSelector} from '../../store/hooks/hooks.ts';
 import './error-message.css';
 
 export const ErrorMessage: React.FC = () => {

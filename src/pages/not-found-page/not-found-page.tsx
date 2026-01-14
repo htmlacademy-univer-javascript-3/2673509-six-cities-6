@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { AppRouteEnum } from '../internal/enums/app-route-enum.tsx';
+import { AppRouteEnum } from '../../internal/enums/app-route-enum.tsx';
 
 export function NotFoundPage(): React.JSX.Element {
   return (

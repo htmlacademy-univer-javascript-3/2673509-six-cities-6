@@ -1,18 +1,18 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import { AxiosInstance } from 'axios';
-import {fetchOffers, redirectToRoute, sendReview, setAuthStatus, setError} from './actions.ts';
-import {APIRoute} from '../internal/enums/api-route-enum.tsx';
-import {setIsFetchOffers} from './actions.ts';
-import {Offer} from '../internal/types/offer-type.tsx';
-import {AuthStatus} from '../internal/enums/auth-status-enum.tsx';
-import {AuthInfo} from '../internal/types/auth-info.tsx';
-import {UserAuthInfo} from '../internal/types/user-auth-info.tsx';
-import {removeToken, setToken} from '../api/token.ts';
-import {AppRouteEnum} from '../internal/enums/app-route-enum.tsx';
-import {DetailedOffer} from '../internal/types/detailed-offer-type.tsx';
-import {ReviewType} from '../internal/types/review-type.tsx';
-import {CommentInfo} from '../internal/types/comment-info.tsx';
-import { AppDispatch, State } from './index.ts';
+import {fetchOffers, redirectToRoute, sendReview, setAuthStatus, setError} from '../actions/actions.ts';
+import {APIRoute} from '../../internal/enums/api-route-enum.tsx';
+import {setIsFetchOffers} from '../actions/actions.ts';
+import {Offer} from '../../internal/types/offer-type.tsx';
+import {AuthStatus} from '../../internal/enums/auth-status-enum.tsx';
+import {AuthInfo} from '../../internal/types/auth-info.tsx';
+import {UserAuthInfo} from '../../internal/types/user-auth-info.tsx';
+import {removeToken, setToken} from '../../api/token.ts';
+import {AppRouteEnum} from '../../internal/enums/app-route-enum.tsx';
+import {DetailedOffer} from '../../internal/types/detailed-offer-type.tsx';
+import {ReviewType} from '../../internal/types/review-type.tsx';
+import {CommentInfo} from '../../internal/types/comment-info.tsx';
+import { AppDispatch, State } from '../index.ts';
 
 export const getOffers = createAsyncThunk<void, undefined, {
   dispatch: AppDispatch;
